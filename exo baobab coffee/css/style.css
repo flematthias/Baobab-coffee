@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../img/fond-papier.jpg);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.corps {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 60em;
+    margin: auto;
+
+}
+
+.corps main {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+h2,
+h3,
+.introtext,
+.titretext {
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+h2,
+h3,
+.introtext,
+p,
+a {
+    color: white;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h2,
+h3 {
+    text-align: center
+}
+
+img {
+    width: 100%
+}
+
+header img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    margin-bottom: 2em;
+    transition: all 1s ease-in-out
+}
+
+#navmobile {
+    display: none;
+}
+
+section,
+div {
+    margin-bottom: 2em;
+}
+
+.section_intro {}
+
+.section_troisblocs div {
+    background-color: black;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.section_torrefaction {
+    position: relative;
+
+}
+
+.section_torrefaction p {
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+    width: 45%;
+    text-align: right;
+}
+
+.section_cafes div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.section_cafes img {
+    margin: 1em;
+    width: 30%;
+}
+
+.section_producteurs {}
+
+.section_philosophie {
+    background: linear-gradient(rgba(0,0,0,0.47),rgba(0,0,0,0.5)), url(../img/grains-couleur.jpg);
+    min-height: 250px;
+}
+
+.section_philosophie img {
+    min-height: 350px;
+}
+
+.section_philosophie div {
+/*    background-color: rgba(93, 93, 93, 0.79);*/
+    padding: 1em;
+    width: 90%;
+}
+
+footer {
+    padding: 2em;
+    text-align: center;
+    background-color: black;
+}
+
+footer img {
+    width: 50%
+}
+
+.boutonmenu {
+    background-image: url(../img/icon/burger.svg);
+    width: 3em;
+    height:3em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s ease-in-out
+
+}
+
+.menuroulant {
+    position: absolute;
+    z-index: 999;
+    display: inline-block;
+    margin: 1.5em;
+    
+}
+
+.menuroulant-contenu {
+    display: none;
+    bottom: 50px;
+    background-color: #5e4423;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+.menuroulant-contenu img {
+    width: auto;
+    margin-right: 1em;
+    vertical-align: middle;
+    max-height: 30px;
+}
+
+.menuroulant-contenu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 25px;
+}
+
+.menuroulant-contenu a:hover {
+    background-color: #8d7147;
+   
+}
+
+.menuroulant:hover .menuroulant-contenu {
+    display: block;
+
+}
+
+.menuroulant:hover .boutonmenu {
+    background-color: #8d7147;
+    border-radius: 100%;
+    width: 4em;
+    height:3em;
+}
+
+@media screen and (min-width:64em) {
+
+    h2,
+    h3 {
+        text-align: left;
+    }
+
+    .clearboth {
+        clear: both;
+    }
+
+    header img {
+        display: block;
+        width: 12.5em;
+        position: relative;
+        top: 10px;
+        margin-bottom: 0;
+    }
+
+    .menuroulant {
+        display: none;
+    }
+
+    #navmobile {
+        display: block
+    }
+
+    header nav {
+        text-align: center;
+        background-color: black;
+        margin: 0 2em 0 2em;
+        border-radius: 2px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    header nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        margin: 1em;
+    }
+
+    .section_intro img {
+        float: left;
+        width: 33%;
+        padding-bottom: 2em;
+        margin-right: 2em;
+        border-radius: 100%;
+    }
+
+    .section_troisblocs {
+        display: flex;
+    }
+
+    .section_troisblocs div {
+        margin-right: 1em;
+    }
+
+    .section_troisblocs div:last-child {
+        margin-right: auto;
+    }
+
+    .section_torrefaction p {
+        width: 40%;
+        font-size: 2.5em;
+    }
+
+    .section_cafes img {
+        width: 20%;
+    }
+
+    .section_producteurs img {
+        float: right;
+        width: 55%;
+        padding-left: 2em;
+        padding-bottom: 2em;
+    }
+
+    .section_philosophie div {
+        width: 50%;
+    }
+
+    footer img {
+        max-width: 7em;
+    }
+}
